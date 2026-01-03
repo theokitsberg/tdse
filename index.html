@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tdse - the doing society of earth</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F3DEBC;
+            font-family: 'Tiempos Headline', Georgia, serif;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-family: 'Tiempos Headline', Georgia, serif;
+            font-style: italic;
+            font-size: 3rem;
+            color: #445B32;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            margin: 40px auto;
+        }
+
+        .content {
+            font-family: 'Tiempos Headline', Georgia, serif;
+            font-style: normal;
+            font-size: 1.1rem;
+            color: #000;
+            line-height: 1.8;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .links {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .links a {
+            display: inline;
+            color: #445B32;
+            text-decoration: underline;
+            font-style: italic;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #445B32;
+        }
+        
+        .links .tdse-text {
+            font-weight: normal;
+            color: #445B32;
+        }
+        
+        .links .separator-pipe {
+            margin: 0 1rem;
+            color: #000;
+            font-style: normal;
+        }
+
+        .tdse-text {
+            color: #445B32;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .tdse-full {
+            color: #000;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+            color: #000;
+        }
+
+        .quote p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .quote-text {
+            font-style: italic;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.85rem;
+            font-style: italic;
+            color: #000;
+        }
+
+        .dialogues-section {
+            margin-top: 2rem;
+            padding-top: 0;
+        }
+
+        .dialogues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        .dialogue-card {
+            text-decoration: none;
+            color: #445B32;
+            font-style: italic;
+            font-size: 0.75rem;
+            padding: 0.75rem;
+            border: 1px solid #445B32;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .dialogue-card:hover {
+            background-color: #445B32;
+            color: #F3DEBC;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+
+            body {
+                padding: 30px 15px;
+            }
+
+            .dialogues-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 0.5rem;
+            }
+
+            .dialogue-card {
+                padding: 0.6rem;
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>tdse</h1>
+            <p><span class="tdse-full">the doing society of earth</span></p>
+        </header>
+        
+        <div class="separator"></div>
+        
+        <div class="quote">
+            <p class="quote-text">Tell me, what is it you plan to do</p>
+            <p class="quote-text">with your one wild and precious life?</p>
+            <p>—Mary Oliver</p>
+        </div>
+        
+        <div class="content">
+            <p>tdse is a celebration of people all around the world who have found something they enjoy doing and deeply care about enough to pour their heart and soul into whatever that thing may be.</p>
+            
+            <p>It's run by me, Theo Kitsberg.</p>
+            
+            <p>My thing that I enjoy doing and deeply care about is helping others discover what their thing is and then find them jobs where they can earn a living doing that thing.</p>
+            
+            <p>I do this at a company called HireGlide. You might want to check that out.</p>
+            
+            <div class="separator"></div>
+            
+            <div class="links">
+                <a href="https://www.instagram.com/tdse.world/" target="_blank"><span class="tdse-text">tdse</span> Instagram</a><span class="separator-pipe">|</span><a href="https://www.tiktok.com/@tdse.world" target="_blank"><span class="tdse-text">tdse</span> TikTok</a><span class="separator-pipe">|</span><a href="https://www.hireglide.ai/" target="_blank">HireGlide</a>
+            </div>
+            
+            <div class="footer">
+                made somewhere on earth
+            </div>
+
+            <div class="dialogues-section">
+                <div class="dialogues-grid">
+                    <a href="dialogue.html" class="dialogue-card">HireGlide CTO</a>
+                    <a href="dialogue2.html" class="dialogue-card">Graphic Designer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

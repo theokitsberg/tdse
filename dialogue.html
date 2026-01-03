@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axel La Pira - tdse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #F3DEBC;
+            font-family: 'Tiempos Headline', Georgia, serif;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .dialogue {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .dialogue p {
+            margin-bottom: 1.5rem;
+        }
+
+        .question {
+            font-style: italic;
+            color: #445B32;
+        }
+
+        .answer {
+            font-style: normal;
+            color: #000;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #445B32;
+            text-decoration: underline;
+            font-style: italic;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            .dialogue {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← back</a>
+        
+        <div class="dialogue">
+            <p class="question">What's your name?</p>
+            <p class="answer">I'm Axel La Pira</p>
+            
+            <p class="question">And what do you do for work?</p>
+            <p class="answer">I am cofounder of a YC company called HireGlide – we are an AI job board that helps people find the right jobs and companies find the right candidates.</p>
+            
+            <p class="question">Do you enjoy it?</p>
+            <p class="answer">Yeah, I really do – it lets me do a lot of everything and I'm constantly speaking to lots of interesting people to get the platform right.</p>
+            
+            <p class="question">What are good signs that someone might enjoy being a founder?</p>
+            <p class="answer">If you like people that all have different strengths, aren't afraid of potential failure and, most importantly, get really frustrated at how broken things are in the world and feel the need to fix them.</p>
+            
+            <p class="question">Did you always know you wanted to be a founder? What else did you consider doing?</p>
+            <p class="answer">I didn't always know, no. I thought about a bunch of different things looking back, which is part of the reason we decided to work on this and help people find their thing.</p>
+            
+            <p class="question">Lastly, any advice for someone who does know they want to be a founder?</p>
+            <p class="answer">Speak to lots of people and lots of other founders to learn the best advice you can and remember that selling is just as important as building.</p>
+        </div>
+    </div>
+</body>
+</html>
