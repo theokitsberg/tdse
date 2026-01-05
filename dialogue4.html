@@ -14,37 +14,22 @@
         body {
             background-color: #F3DEBC;
             font-family: 'Tiempos Headline', Georgia, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 40px;
+            padding: 40px 20px;
+            line-height: 1.6;
         }
 
-        .phones-wrapper {
-            display: flex;
-            gap: 30px;
-            align-items: flex-start;
-        }
-
-        .phone-container {
-            width: 390px;
-            height: 844px;
-            background-color: #F3DEBC;
-            padding: 50px 35px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .dialogue {
-            font-size: 0.95rem;
-            line-height: 1.65;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         .dialogue p {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
         }
 
         .question {
@@ -58,13 +43,11 @@
         }
 
         .back-link {
-            position: fixed;
-            top: 20px;
-            left: 20px;
+            display: inline-block;
+            margin-bottom: 2rem;
             color: #445B32;
             text-decoration: underline;
             font-style: italic;
-            font-size: 0.9rem;
             transition: opacity 0.3s ease;
         }
 
@@ -72,66 +55,46 @@
             opacity: 0.7;
         }
 
-        /* For smaller screens, stack vertically */
-        @media (max-width: 1300px) {
-            .phones-wrapper {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
+        @media (max-width: 600px) {
             body {
-                padding: 20px;
+                padding: 30px 15px;
             }
-        }
 
-        @media (max-width: 430px) {
-            .phone-container {
-                width: 100%;
-                height: auto;
-                min-height: 100vh;
-                box-shadow: none;
+            .dialogue {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-link">← back</a>
-    
-    <div class="phones-wrapper">
-        <!-- First iPhone Screen -->
-        <div class="phone-container">
-            <div class="dialogue">
-                <p class="question">What's your name?</p>
-                <p class="answer">I'd rather stay anon if that's ok!</p>
-                
-                <p class="question">And what do you do for work?</p>
-                <p class="answer">I'm a junior doctor</p>
-                
-                <p class="question">Do you enjoy it?</p>
-                <p class="answer">Most of the time, because it's rewarding but can also be very stressful with long hours and looking after very sick patients</p>
-                
-                <p class="question">What are good signs that someone might enjoy doing what you do and be good at it?</p>
-                <p class="answer">Being able to stay calm in stressful situations. Be methodical, focused and caring. Need to be a good team player and willing to keep learning.</p>
-            </div>
-        </div>
-
-        <!-- Second iPhone Screen -->
-        <div class="phone-container">
-            <div class="dialogue">
-                <p class="question">Did you always know you wanted to do what you do?</p>
-                <p class="answer">Not immediately but was inspired by seeing other doctors during work experience.</p>
-                
-                <p class="question">What else did you consider doing?</p>
-                <p class="answer">Teaching or physiotherapy.</p>
-                
-                <p class="question">Any advice for someone who does know they want to do what you do?</p>
-                <p class="answer">Talk to junior doctors doing it now and ask to shadow or arrange work experience in a hospital.</p>
-                
-                <p class="question">Are there any misconceptions people might have about what it's like to do what you do?</p>
-                <p class="answer">That we just follow orders from consultants without thinking, when actually we're constantly making decisions and managing patients ourselves.</p>
-            </div>
+    <div class="container">
+        <a href="index.html" class="back-link">← back</a>
+        
+        <div class="dialogue">
+            <p class="question">What's your name?</p>
+            <p class="answer">I'd rather stay anon if that's ok!</p>
+            
+            <p class="question">And what do you do for work?</p>
+            <p class="answer">I'm a junior doctor</p>
+            
+            <p class="question">Do you enjoy it?</p>
+            <p class="answer">Most of the time, because it's rewarding but can also be very stressful with long hours and looking after very sick patients</p>
+            
+            <p class="question">What are good signs that someone might enjoy doing what you do and be good at it?</p>
+            <p class="answer">Being able to stay calm in stressful situations. Be methodical, focused and caring. Need to be a good team player and willing to keep learning.</p>
+            
+            <p class="question">Did you always know you wanted to do what you do?</p>
+            <p class="answer">Not immediately but was inspired by seeing other doctors during work experience.</p>
+            
+            <p class="question">What else did you consider doing?</p>
+            <p class="answer">Teaching or physiotherapy.</p>
+            
+            <p class="question">Any advice for someone who does know they want to do what you do?</p>
+            <p class="answer">Talk to junior doctors doing it now and ask to shadow or arrange work experience in a hospital.</p>
+            
+            <p class="question">Are there any misconceptions people might have about what it's like to do what you do?</p>
+            <p class="answer">That we just follow orders from consultants without thinking, when actually we're constantly making decisions and managing patients ourselves.</p>
         </div>
     </div>
 </body>
 </html>
-
